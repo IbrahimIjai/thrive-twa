@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { RootProvider } from "@/providers";
+import TelegramProvider from "@/providers/tg";
+import Header from "@/ui/layout/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +19,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <RootProvider>
+          <>
+            <Header />
+            <div className="max-w-5xl">{children}</div>
+          </>
+        </RootProvider>
+        <TelegramProvider />
+      </body>
     </html>
   );
 }

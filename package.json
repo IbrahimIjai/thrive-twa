@@ -11,11 +11,21 @@
   "dependencies": {
     "@biconomy/account": "^4.4.6",
     "@biconomy/particle-auth": "^4.1.1",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@tanstack/react-query": "^5.48.0",
     "@twa-dev/sdk": "^7.0.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "connectkit": "^1.8.2",
+    "lucide-react": "^0.399.0",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7",
     "telegram-webapps-types": "^1.0.5",
+    "viem": "^2.16.3",
+    "wagmi": "^2.10.8",
     "zustand": "^4.5.2"
   },
   "devDependencies": {
