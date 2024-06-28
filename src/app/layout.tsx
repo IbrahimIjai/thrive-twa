@@ -23,7 +23,7 @@ export default function RootLayout({
         <RootProvider>
           <>
             <Header />
-            <div className="max-w-5xl">{children}</div>
+            <div className="mt-[82px] max-w-5xl">{children}</div>
           </>
         </RootProvider>
         <TelegramProvider />
