@@ -4,6 +4,7 @@ import "./globals.css";
 import { RootProvider } from "@/providers";
 import TelegramProvider from "@/providers/tg";
 import Header from "@/ui/layout/header";
+import Footer from "@/ui/layout/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,10 +22,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <RootProvider>
-          <>
+          <div className="flex flex-col items-center justify-center w-full">
             <Header />
-            <div className="mt-[82px] max-w-5xl">{children}</div>
-          </>
+            <div className="mt-[82px]   w-full">{children}</div>
+            <Footer />
+          </div>
         </RootProvider>
         <TelegramProvider />
       </body>

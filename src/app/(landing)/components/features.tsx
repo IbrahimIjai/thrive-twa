@@ -15,12 +15,16 @@ import {
 export default function Features() {
   const router = useRouter();
   return (
-    <section className="flex flex-col items-center justify-between px-4">
-      <p>Key Features</p>
-      <h1>Four ways to save on thrive</h1>
-      <p>Earn 4%-10% APR when you save with any of these Thrive.</p>
+    <section className="flex flex-col items-center justify-between px-4 gap-8">
+      <div className="flex flex-col items-center">
+        <p className="text-xs">Key Features</p>
+        <h1 className="font-bold text-lg">Four ways to save on thrive</h1>
+        <p className="text-sm">
+          Earn 4%-10% APR when you save with any of these Thrive.
+        </p>
+      </div>
 
-      <div className="">
+      <div className="flex flex-col items-center gap-4 lg:grid lg:grid-cols-2">
         {features.map((feature, i) => {
           return (
             <Card key={i}>
